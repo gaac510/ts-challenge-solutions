@@ -1,5 +1,6 @@
 {
-    "compilerOptions": {
-        "strict": true
-    }
+  "compilerOptions": {
+    "lib": ["ES2020"],
+    "strict": true
+  }
 }
