@@ -32,8 +32,8 @@ type cases = [
 // ============= Your Code Here =============
 type Permutation<T, Clone = T> = [T] extends [never]
   ? []
-  : T extends infer Member
-  ? [Member, ...Permutation<Clone extends Member ? never : Clone>]
+  : T extends any
+  ? [T, ...Permutation<Clone extends T ? never : Clone>]
   : never;
 
 /**
